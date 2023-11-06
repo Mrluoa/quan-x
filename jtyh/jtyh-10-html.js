@@ -1,5 +1,5 @@
 /**
-* 交通银行，10点5折页面
+* jtxh，10点5折页面
 
 QuantumultX:
 
@@ -12,6 +12,7 @@ hostname = creditcardapp.bankcomm.com
 
 // 替换当前时间
 const timeRegex = 'var currentTm \= \"\d{2}:\d{2}:\d{2}"\;';
+const timeEmpRegex = 'var currentTm \= \"\"\;';
 const timeReplace_str = 'var currentTm = \"10:00:00\";'
 
 const flgRegex = 'var previewFlg = "2";';
@@ -19,6 +20,6 @@ const flgReplace_str = 'var previewFlg = "1";'
 
 var body = $response.body;
 
-body = body.replace(timeRegex, timeReplace_str).replace(flgRegex, flgReplace_str);
+body = body.replace(timeRegex, timeReplace_str).replace(timeEmpRegex, timeReplace_str).replace(flgRegex, flgReplace_str);
 
 $done({ body: body });
