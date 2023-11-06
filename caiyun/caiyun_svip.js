@@ -8,7 +8,7 @@
 
 [rewrite_local]
 
-https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://gitee.com/mrluoa/quan-x/raw/master/caiyun/caiyun_svip.js
+https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/Mrluoa/quan-x/main/caiyun/caiyun_svip.js
 
 [mitm]
 

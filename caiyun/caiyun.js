@@ -8,7 +8,7 @@
 
 [rewrite_local]
 
-^https:\/\/biz\.(caiyunapp|cyapi)\.(com|cn) url script-response-body https://gitee.com/mrluoa/quan-x/raw/master/caiyun/caiyun.js
+^https:\/\/biz\.(caiyunapp|cyapi)\.(com|cn) url script-response-body https://raw.githubusercontent.com/Mrluoa/quan-x/main/caiyun/caiyun.js
 
 ^https:\/\/ad\.caiyunapp\.com\/ url reject
 
