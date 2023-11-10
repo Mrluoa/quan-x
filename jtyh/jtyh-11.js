@@ -19,6 +19,9 @@ obj.data.maxOrderProductCount = "1";
 obj.data.productBaseInfoVO.salesVolume = 0;
 obj.data.activeBuyCount = null;
 
+var nowDate = obj.data.actForecast.actStageList[0].stageStartTime;
+obj.data.actForecast.nowDate = nowDate;
+
 body = JSON.stringify(obj);
 
 $done({ body });
