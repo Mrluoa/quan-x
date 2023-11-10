@@ -20,8 +20,6 @@ var flgReplace_str = 'var previewFlg = "1";'
 
 var body = $response.body;
 
-console.log("时间匹配：" + body.replace(timeRegex, timeReplace_str));
-
 body = body.replace(timeRegex, timeReplace_str).replace(timeEmpRegex, timeReplace_str).replace(flgRegex, flgReplace_str);
 
 $done({ body: body });
