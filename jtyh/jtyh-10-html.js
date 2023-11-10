@@ -19,7 +19,6 @@ var flgRegex = 'var previewFlg = "2";';
 var flgReplace_str = 'var previewFlg = "1";'
 
 var body = $response.body;
-
 console.log("时间匹配：" + body.test(timeRegex))
 
 body = body.replace(timeRegex, timeReplace_str).replace(timeEmpRegex, timeReplace_str).replace(flgRegex, flgReplace_str);
