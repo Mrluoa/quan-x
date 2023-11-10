@@ -4,7 +4,7 @@
 QuantumultX:
 
 [rewrite_local]
-^https?:\/\/creditcardapp\.bankcomm\.com\/redweb\/2023redFirstHalf\/detail url script-response-body https://raw.githubusercontent.com/Mrluoa/quan-x/main/jtyh/jtyh-jyj.js
+^https?:\/\/creditcardapp\.bankcomm\.com\/redweb\/2023redFirstHalf\/detail url script-response-body https://raw.githubusercontent.com/Mrluoa/quan-x/main/jtyh/jtyh-10-html.js
 
 [mitm]
 hostname = creditcardapp.bankcomm.com
