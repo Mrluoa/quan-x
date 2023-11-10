@@ -16,6 +16,8 @@ var obj = JSON.parse(body);
 obj.data.hasBuy = true;
 obj.data.buttonType = "02";
 obj.data.maxOrderProductCount = "1";
+obj.data.productBaseInfoVO.salesVolume = 0;
+obj.data.activeBuyCount = null;
 
 body = JSON.stringify(obj);
 
