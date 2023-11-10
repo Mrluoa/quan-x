@@ -12,8 +12,8 @@ hostname = creditcardapp.bankcomm.com
 
 // 替换当前时间
 const timeRegex = 'var currentTm = "\d{1,2}:\d{1,2}:\d{1,2}";';
-const timeEmpRegex = 'var currentTm \= \"\"\;';
-const timeReplace_str = 'var currentTm = \"10:00:00\";'
+const timeEmpRegex = 'var currentTm = "";';
+const timeReplace_str = 'var currentTm = "9:50:00";'
 
 const flgRegex = 'var previewFlg = "2";';
 const flgReplace_str = 'var previewFlg = "1";'
