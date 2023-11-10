@@ -11,12 +11,12 @@ hostname = creditcardapp.bankcomm.com
 **/
 
 // 替换当前时间
-const timeRegex = /^var currentTm = "\d{1,2}:\d{1,2}:\d{1,2}";/g;
-const timeEmpRegex = /^var currentTm = "";/g;
-const timeReplace_str = 'var currentTm = "10:00:00";'
+var timeRegex = /^var currentTm = "\d{1,2}:\d{1,2}:\d{1,2}";/g;
+var timeEmpRegex = /^var currentTm = "";/g;
+var timeReplace_str = 'var currentTm = "10:00:00";'
 
-const flgRegex = 'var previewFlg = "2";';
-const flgReplace_str = 'var previewFlg = "1";'
+var flgRegex = 'var previewFlg = "2";';
+var flgReplace_str = 'var previewFlg = "1";'
 
 var body = $response.body;
 
