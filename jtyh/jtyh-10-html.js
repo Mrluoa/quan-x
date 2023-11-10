@@ -11,8 +11,8 @@ hostname = creditcardapp.bankcomm.com
 **/
 
 // 替换当前时间
-var timeRegex = /^var currentTm = "\d{1,2}:\d{1,2}:\d{1,2}";/g;
-var timeEmpRegex = /^var currentTm = "";/g;
+var timeRegex = 'var currentTm = "\d{1,2}:\d{1,2}:\d{1,2}";';
+var timeEmpRegex = 'var currentTm = "";';
 var timeReplace_str = 'var currentTm = "10:00:00";'
 
 var flgRegex = 'var previewFlg = "2";';
