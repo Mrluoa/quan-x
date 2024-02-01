@@ -94,7 +94,7 @@ obj.data.calendarTicketPoolsByDate.forEach(item => {
             {
                 "saleMode": 1,
                 "openPerson": 1,
-                "status": 3,
+                "status": 4,
                 "ticketPool": 50,
                 "currentDate": item.currentDate,
                 "seasonType": null,
