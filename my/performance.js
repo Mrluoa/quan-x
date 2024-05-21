@@ -9,7 +9,7 @@ var obj = JSON.parse(body);
 
 obj.data.ticketStatus = 2;
 //obj.data.saleRemindVO.onSaleTime = Date.now();
-//obj.data.saleRemindVO.onSaleStatus = 2;
+obj.data.saleRemindVO.onSaleStatus = 2;
 //obj.data.saleRemindVO.needCountDown = false;
 //obj.data.saleRemindVO.countdownTime = 1832013888;
 
