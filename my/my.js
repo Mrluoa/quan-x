@@ -15,7 +15,9 @@ var obj = JSON.parse(body);
 
 obj.data.forEach(item => {
     item.remainingStock = 100;
+    item.hasInventory = true;
     item.showStatus = 0;
+    item.soldOut = false;
 });
 body = JSON.stringify(obj);
 
