@@ -13,7 +13,7 @@ obj.data.saleRemindVO.onSaleStatus = 2;
 obj.data.saleRemindVO.needCountDown = true;
 obj.data.saleStatus = 2;
 
-//obj.data.saleRemindVO.countdownTime = 1832013888;
+obj.data.saleRemindVO.countdownTime = obj.data.saleRemindVO.onSaleTime;
 
 body = JSON.stringify(obj);
 $done({ body });
