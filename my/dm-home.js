@@ -12,6 +12,9 @@ if (obj.data && obj.data.result) {
         "buyBtnText": "立即购买",
         "buyBtnOrigin": "12",
     };
+    delete result.detailViewComponentMap.item.staticData.ticketPurchasesGuidePage;
+    result.detailViewComponentMap.item.staticData.isHotProject = true;
+    result.detailViewComponentMap.item.staticData.isShowGrabTicketGuide = false;
     obj.data.result = JSON.stringify(result);
 }
 
