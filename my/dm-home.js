@@ -13,8 +13,8 @@ if (obj.data && obj.data.result) {
         "buyBtnOrigin": "12",
     };
     delete result.detailViewComponentMap.item.staticData.ticketPurchasesGuidePage;
-    result.detailViewComponentMap.item.staticData.isHotProject = true;
-    result.detailViewComponentMap.item.staticData.isShowGrabTicketGuide = false;
+    result.detailViewComponentMap.item.staticData.itemBase.isHotProject = true;
+    result.detailViewComponentMap.item.staticData.itemBase.isShowGrabTicketGuide = false;
     obj.data.result = JSON.stringify(result);
 }
 
