@@ -13,6 +13,16 @@ if (obj.data && obj.data.legacy) {
     result.detailViewComponentMap.item.item.sellStartTime = Date.now();
     delete result.detailViewComponentMap.item.buyBtnTip;
     delete result.detailViewComponentMap.item.statusNotice;
+    if (result.detailViewComponentMap.item.item.performBases) {
+        result.detailViewComponentMap.item.item.performBases.forEach(item => {
+            if (item.performs) {
+                item.performs.forEach(subitem => {
+                    subitem.saleForm = 1;
+                })
+            }
+
+        });
+    }
 
     delete result.detailViewComponentMap.item.staticData.ticketPurchasesGuidePage;
     result.detailViewComponentMap.item.staticData.itemBase.isHotProject = true;
