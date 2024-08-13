@@ -7,11 +7,12 @@ var obj = JSON.parse(body);
 
 if (obj.data && obj.data.result) {
     var result = JSON.parse(obj.data.result);
-    result.itemBuyBtn = {
-        "btnStatus": "204",
-        "btnText": "立即购买",
-        "btnOrigin": "12"
-    };
+
+
+    result.itemBuyBtn.btnStatus = "204";
+    result.itemBuyBtn.btnText = "立即购买";
+    result.itemBuyBtn.btnOrigin = "12";
+
     if (result.perform) {
         //result.perform.saleForm = "1";
 
@@ -21,6 +22,7 @@ if (obj.data && obj.data.result) {
             item.salableQuantity = "6";
             item.skuSalable = "true";
             item.tags = [];
+            item.status = "1";
             item.mktPromotionTips = "";
 
             delete item.followRelationTargetType;
