@@ -10,11 +10,12 @@ if (obj.data && obj.data.legacy) {
     result.detailViewComponentMap.item.item.buyBtnStatus = "204";
     result.detailViewComponentMap.item.item.buyBtnText = "立即购买";
     result.detailViewComponentMap.item.item.buyBtnOrigin = "12";
+    result.detailViewComponentMap.item.item.sellStartTime = Date.now();
 
     delete result.detailViewComponentMap.item.staticData.ticketPurchasesGuidePage;
     result.detailViewComponentMap.item.staticData.itemBase.isHotProject = true;
     result.detailViewComponentMap.item.staticData.itemBase.isShowGrabTicketGuide = false;
-    delete statusNotice
+    result.detailViewComponentMap.item.dynamicExtData.subFlag = false;
 
     obj.data.legacy = JSON.stringify(result);
 
