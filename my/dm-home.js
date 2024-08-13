@@ -5,17 +5,19 @@
 var body = $response.body;
 var obj = JSON.parse(body);
 
-if (obj.data && obj.data.result) {
-    var result = JSON.parse(obj.data.result);
-    result.detailViewComponentMap.item.item = {
-        "buyBtnStatus": "204",
-        "buyBtnText": "立即购买",
-        "buyBtnOrigin": "12",
-    };
+if (obj.data && obj.data.legacy) {
+    var result = JSON.parse(obj.data.legacy);
+    result.detailViewComponentMap.item.item.buyBtnStatus = "204";
+    result.detailViewComponentMap.item.item.buyBtnText = "立即购买";
+    result.detailViewComponentMap.item.item.buyBtnOrigin = "12";
+
     delete result.detailViewComponentMap.item.staticData.ticketPurchasesGuidePage;
     result.detailViewComponentMap.item.staticData.itemBase.isHotProject = true;
     result.detailViewComponentMap.item.staticData.itemBase.isShowGrabTicketGuide = false;
-    obj.data.result = JSON.stringify(result);
+    delete statusNotice
+
+    obj.data.legacy = JSON.stringify(result);
+
 }
 
 body = JSON.stringify(obj);
