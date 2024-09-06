@@ -19,7 +19,7 @@ if (obj.data && obj.data.result) {
     if (result.perform) {
         result.perform.saleForm = "1";
 
-        result.perform.presale = "true";
+        result.perform.presale = "false";
 
         result.perform.skuList.forEach(item => {
             item.frontEndStatus = "1";
