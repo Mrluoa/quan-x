@@ -12,9 +12,9 @@ if (obj.data && obj.data.result) {
         "renderingType": "1"
     };
 
-    result.itemBuyBtn.btnStatus = "204";
-    result.itemBuyBtn.btnText = "立即购买";
-    result.itemBuyBtn.btnOrigin = "12";
+    // result.itemBuyBtn.btnStatus = "204";
+    // result.itemBuyBtn.btnText = "立即购买";
+    // result.itemBuyBtn.btnOrigin = "12";
 
     // if (result.perform) {
     //     result.perform.saleForm = "1";
