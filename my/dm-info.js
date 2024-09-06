@@ -42,6 +42,7 @@ if (obj.data && obj.data.result) {
             item.buyPermission = true;
             item.salable = true;
             item.clickable = true;
+            item.checked = true;
             item.tags = [];
             delete item.otherTag;
         })
