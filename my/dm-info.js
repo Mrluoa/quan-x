@@ -37,16 +37,16 @@ if (obj.data && obj.data.result) {
     //     })
     // }
 
-    if (result.performCalendar) {
-        result.performCalendar.performViews.forEach(item => {
-            item.buyPermission = "true";
-            item.salable = "true";
-            item.clickable = "true";
-            item.checked = "true";
-            item.tags = [];
-            delete item.otherTag;
-        })
-    }
+    // if (result.performCalendar) {
+    //     result.performCalendar.performViews.forEach(item => {
+    //         item.buyPermission = "true";
+    //         item.salable = "true";
+    //         item.clickable = "true";
+    //         item.checked = "true";
+    //         item.tags = [];
+    //         delete item.otherTag;
+    //     })
+    // }
 
     obj.data.result = JSON.stringify(result);
 }
