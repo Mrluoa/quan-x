@@ -49,9 +49,9 @@ if (obj.data && obj.data.result) {
     }
 
     obj.data.result = JSON.stringify(result);
-    console.log("修改数据")
-}
 
+}
+console.log("修改数据")
 body = JSON.stringify(obj);
 
 $done({ body });
