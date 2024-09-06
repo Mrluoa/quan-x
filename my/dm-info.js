@@ -15,7 +15,8 @@ if (obj.data && obj.data.result) {
     result.itemBuyBtn.btnStatus = "204";
     result.itemBuyBtn.btnText = "立即购买";
     result.itemBuyBtn.btnOrigin = "12";
-    delete result.itemBuyBtn.btnTips;
+    delete result.itemBuyBtn.scd;
+    delete result.itemBuyBtn.msrdc;
 
     if (result.perform) {
         result.perform.saleForm = "1";
