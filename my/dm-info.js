@@ -9,7 +9,7 @@ if (obj.data && obj.data.result) {
     var result = JSON.parse(obj.data.result);
 
     result.actionControl.renderingControl = {
-        "renderingType": "1"
+        "renderingType": "2"
     };
 
     result.itemBuyBtn.btnStatus = "204";
@@ -31,9 +31,9 @@ if (obj.data && obj.data.result) {
             item.status = "1";
             item.mktPromotionTips = "";
 
-            // delete item.followRelationTargetType;
-            // delete item.otherTag;
-            // delete item.tips;
+            delete item.followRelationTargetType;
+            delete item.otherTag;
+            delete item.tips;
         })
     }
 
