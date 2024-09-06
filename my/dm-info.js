@@ -22,7 +22,7 @@ if (obj.data && obj.data.result) {
         result.perform.presale = "false";
 
         result.perform.skuList.forEach(item => {
-            item.frontEndStatus = "1";
+            // item.frontEndStatus = "1";
             // item.mq = "6";
             // item.salableQuantity = result.perform.limitQuantity;
             item.skuSalable = "true";
@@ -49,9 +49,9 @@ if (obj.data && obj.data.result) {
     }
 
     obj.data.result = JSON.stringify(result);
-    console.log("修改数据内容1")
+    console.log("修改数据内容2")
 }
-console.log("修改数据完成调用1")
+console.log("修改数据完成调用2")
 body = JSON.stringify(obj);
 
 $done({ body });
