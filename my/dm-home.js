@@ -10,7 +10,7 @@ if (obj.data && obj.data.legacy) {
     result.detailViewComponentMap.item.item.buyBtnStatus = "204";
     result.detailViewComponentMap.item.item.buyBtnText = "立即购买";
     result.detailViewComponentMap.item.item.buyBtnOrigin = "12";
-    result.detailViewComponentMap.item.item.sellStartTime = Date.now();
+    //result.detailViewComponentMap.item.item.sellStartTime = Date.now();
     delete result.detailViewComponentMap.item.buyBtnTip;
     delete result.detailViewComponentMap.item.statusNotice;
     if (result.detailViewComponentMap.item.item.performBases) {
