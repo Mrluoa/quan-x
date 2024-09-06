@@ -8,9 +8,9 @@ var obj = JSON.parse(body);
 if (obj.data && obj.data.result) {
     var result = JSON.parse(obj.data.result);
 
-    // result.actionControl.renderingControl = {
-    //     "renderingType": "1"
-    // };
+    result.actionControl.renderingControl = {
+        "renderingType": "1"
+    };
 
     result.itemBuyBtn.btnStatus = "204";
     result.itemBuyBtn.btnText = "立即购买";
@@ -24,12 +24,13 @@ if (obj.data && obj.data.result) {
         result.perform.skuList.forEach(item => {
             item.frontEndStatus = "1";
             item.mq = "6";
-            item.salableQuantity = "4";
+            item.salableQuantity = result.perform.limitQuantity;
             item.skuSalable = "true";
             item.tags = [];
             item.status = "1";
             item.mktPromotionTips = "";
 
+            delete item.mktPromotionTips;
             delete item.followRelationTargetType;
             delete item.otherTag;
             delete item.tips;
