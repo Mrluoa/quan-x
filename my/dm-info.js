@@ -8,7 +8,9 @@ var obj = JSON.parse(body);
 if (obj.data && obj.data.result) {
     var result = JSON.parse(obj.data.result);
 
-    result.actionControl.renderingControl = "1";
+    result.actionControl.renderingControl = {
+        "renderingType": "1"
+    };
 
     result.itemBuyBtn.btnStatus = "204";
     result.itemBuyBtn.btnText = "立即购买";
