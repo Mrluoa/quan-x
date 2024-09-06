@@ -51,7 +51,7 @@ if (obj.data && obj.data.result) {
     obj.data.result = JSON.stringify(result);
     console.log("修改数据内容1")
 }
-console.log("修改数据完成调用")
+console.log("修改数据完成调用1")
 body = JSON.stringify(obj);
 
 $done({ body });
