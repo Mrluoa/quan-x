@@ -15,8 +15,6 @@ if (obj.data && obj.data.result) {
     result.itemBuyBtn.btnStatus = "204";
     result.itemBuyBtn.btnText = "立即购买";
     result.itemBuyBtn.btnOrigin = "12";
-    delete result.itemBuyBtn.scd;
-    delete result.itemBuyBtn.msrdc;
 
     if (result.perform) {
         result.perform.saleForm = "1";
@@ -40,7 +38,7 @@ if (obj.data && obj.data.result) {
 
     if (result.performCalendar) {
         result.performCalendar.performViews.forEach(item => {
-            item.buyPermission = true;
+            item.buyPermission = "true";
             item.salable = true;
             item.clickable = true;
             item.checked = true;
