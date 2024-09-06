@@ -21,20 +21,20 @@ if (obj.data && obj.data.result) {
 
         result.perform.presale = "false";
 
-        result.perform.skuList.forEach(item => {
-            item.frontEndStatus = "1";
-            item.mq = "6";
-            // item.salableQuantity = result.perform.limitQuantity;
-            item.skuSalable = "true";
-            item.tags = [];
-            item.status = "1";
-            item.mktPromotionTips = "";
+        // result.perform.skuList.forEach(item => {
+        //     item.frontEndStatus = "1";
+        //     item.mq = "6";
+        //     item.salableQuantity = result.perform.limitQuantity;
+        //     item.skuSalable = "true";
+        //     item.tags = [];
+        //     item.status = "1";
+        //     item.mktPromotionTips = "";
 
-            //delete item.mktPromotionTips;
-            delete item.followRelationTargetType;
-            delete item.otherTag;
-            delete item.tips;
-        })
+        //     //delete item.mktPromotionTips;
+        //     delete item.followRelationTargetType;
+        //     delete item.otherTag;
+        //     delete item.tips;
+        // })
     }
 
     if (result.performCalendar) {
