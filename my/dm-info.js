@@ -19,7 +19,7 @@ if (obj.data && obj.data.result) {
     if (result.perform) {
         result.perform.saleForm = "1";
 
-        result.perform.presale = true;
+        result.perform.presale = "true";
 
         result.perform.skuList.forEach(item => {
             item.frontEndStatus = "1";
@@ -39,9 +39,9 @@ if (obj.data && obj.data.result) {
     if (result.performCalendar) {
         result.performCalendar.performViews.forEach(item => {
             item.buyPermission = "true";
-            item.salable = true;
-            item.clickable = true;
-            item.checked = true;
+            item.salable = "true";
+            item.clickable = "true";
+            item.checked = "true";
             item.tags = [];
             delete item.otherTag;
         })
