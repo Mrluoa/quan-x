@@ -18,7 +18,7 @@ if (obj.data && obj.data.result) {
     delete result.itemBuyBtn.btnTips;
 
     if (result.perform) {
-        //result.perform.saleForm = "1";
+        result.perform.saleForm = "1";
 
         result.perform.presale = true;
 
