@@ -46,7 +46,6 @@ if (obj.data && obj.data.result) {
             delete item.otherTag;
         })
     }
-    //item.itemBasicInfo.sellingStartTime = "202409061100"
 
     obj.data.result = JSON.stringify(result);
 }
