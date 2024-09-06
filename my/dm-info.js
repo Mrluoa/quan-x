@@ -30,7 +30,7 @@ if (obj.data && obj.data.result) {
             item.status = "1";
             item.mktPromotionTips = "";
 
-            delete item.mktPromotionTips;
+            //delete item.mktPromotionTips;
             delete item.followRelationTargetType;
             delete item.otherTag;
             delete item.tips;
