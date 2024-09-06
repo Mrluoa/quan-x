@@ -9,7 +9,7 @@ if (obj.data && obj.data.result) {
     var result = JSON.parse(obj.data.result);
 
     result.actionControl.renderingControl = {
-        "renderingType": "2"
+        "renderingType": "1"
     };
 
     result.itemBuyBtn.btnStatus = "204";
