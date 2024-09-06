@@ -24,7 +24,7 @@ if (obj.data && obj.data.result) {
         result.perform.skuList.forEach(item => {
             item.frontEndStatus = "1";
             item.mq = "6";
-            // item.salableQuantity = result.perform.limitQuantity;
+            item.salableQuantity = result.perform.limitQuantity;
             item.skuSalable = "true";
             item.tags = [];
             item.status = "1";
